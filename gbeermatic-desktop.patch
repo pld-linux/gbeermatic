@@ -1,7 +1,7 @@
 diff -urN aaa/gbeermatic-0.1/gbeermatic.desktop.in gbeermatic-0.1/gbeermatic.desktop.in
 --- aaa/gbeermatic-0.1/gbeermatic.desktop.in	2003-11-06 14:55:45.000000000 +0100
 +++ gbeermatic-0.1/gbeermatic.desktop.in	2003-12-04 17:36:07.000000000 +0100
-@@ -1,10 +1,11 @@
+@@ -1,10 +1,12 @@
 -
  [Desktop Entry]
 -Name=gbeermatic Version 0.1
@@ -12,10 +12,12 @@ diff -urN aaa/gbeermatic-0.1/gbeermatic.desktop.in gbeermatic-0.1/gbeermatic.des
  Exec=gbeermatic
  Icon=@PACKAGE_PIXMAPS_DIR@/gbeermatic_icon.xpm
  Terminal=false
- MultipleArgs=false
+-MultipleArgs=false
++X-MultipleArgs=false
  Type=Application
 -
 +Categories=Application;Game;ArcadeGame;
++Encoding=UTF-8
 +# vi: encoding=utf-8
 diff -urN aaa/gbeermatic-0.1/Makefile.am gbeermatic-0.1/Makefile.am
 --- aaa/gbeermatic-0.1/Makefile.am	2003-11-06 14:55:45.000000000 +0100
