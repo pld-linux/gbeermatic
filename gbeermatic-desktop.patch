@@ -16,7 +16,7 @@ diff -urN aaa/gbeermatic-0.1/gbeermatic.desktop.in gbeermatic-0.1/gbeermatic.des
 +X-MultipleArgs=false
  Type=Application
 -
-+Categories=Application;Game;ArcadeGame;
++Categories=GTK;GNOME;Game;ArcadeGame;
 +Encoding=UTF-8
 +# vi: encoding=utf-8
 diff -urN aaa/gbeermatic-0.1/Makefile.am gbeermatic-0.1/Makefile.am
