@@ -11,8 +11,11 @@ Patch0:		%{name}-desktop.patch
 URL:		http://earthworm.no-ip.com/gbeermatic/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel >= 0.10.40
 BuildRequires:	libglade2-devel >= 2.0.1
 BuildRequires:	libgnomeui-devel >= 2.4.0
+BuildRequires:	libtool
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,9 +31,11 @@ gierki i inne g³upie rzeczy.
 %patch0 -p1
 
 %build
-glib-gettextize --copy --force
+%{__gettextize}
+%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure
 %{__make}
@@ -41,6 +46,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+# useless in binary package
+rm -rf $RPM_BUILD_ROOT%{_includedir}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -48,6 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
-%{_includedir}/%{name}
 %{_desktopdir}/*.desktop
 %{_pixmapsdir}/%{name}
