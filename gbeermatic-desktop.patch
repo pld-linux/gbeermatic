@@ -1,0 +1,31 @@
+diff -urN aaa/gbeermatic-0.1/gbeermatic.desktop.in gbeermatic-0.1/gbeermatic.desktop.in
+--- aaa/gbeermatic-0.1/gbeermatic.desktop.in	2003-11-06 14:55:45.000000000 +0100
++++ gbeermatic-0.1/gbeermatic.desktop.in	2003-12-04 17:36:07.000000000 +0100
+@@ -1,10 +1,11 @@
+-
+ [Desktop Entry]
+-Name=gbeermatic Version 0.1
+-Comment=gbeermatic Version 0.1
++Name=gbeermatic
++Comment=Stupid games to help you get drunk in style
++Comment[pl]=Głupie gierki pomagające upić się w stylu
+ Exec=gbeermatic
+ Icon=@PACKAGE_PIXMAPS_DIR@/gbeermatic_icon.xpm
+ Terminal=false
+ MultipleArgs=false
+ Type=Application
+-
++Categories=Application;Game;ArcadeGame;
++# vi: encoding=utf-8
+diff -urN aaa/gbeermatic-0.1/Makefile.am gbeermatic-0.1/Makefile.am
+--- aaa/gbeermatic-0.1/Makefile.am	2003-11-06 14:55:45.000000000 +0100
++++ gbeermatic-0.1/Makefile.am	2003-12-04 17:31:14.000000000 +0100
+@@ -18,7 +18,7 @@
+ 
+ EXTRA_DIST = $(gbeermaticdoc_DATA)
+ 
+-gnomemenudir = $(prefix)/@NO_PREFIX_PACKAGE_MENU_DIR@/Games
++gnomemenudir = $(prefix)/share/applications
+ gnomemenu_DATA = gbeermatic.desktop
+ 
+ # Copy all the spec files. Of cource, only one is actually used.
