@@ -2,7 +2,7 @@ Summary:	Stupid games to help you get drunk in style
 Summary(pl):	G³upie gierki pomagaj±ce upiæ siê w stylu
 Name:		gbeermatic
 Version:	0.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://earthworm.no-ip.com/%{name}/%{name}-%{version}.tar.gz
