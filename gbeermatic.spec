@@ -1,5 +1,5 @@
 Summary:	Stupid games to help you get drunk in style
-Summary(pl):	G³upie gierki pomagaj±ce upiæ siê w stylu
+Summary(pl.UTF-8):   GÅ‚upie gierki pomagajÄ…ce upiÄ‡ siÄ™ w stylu
 Name:		gbeermatic
 Version:	0.1
 Release:	3
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 gBeermatic is a GTK+2 based drinking game program. It features film
 questions, games, and other stupid stuff.
 
-%description -l pl
-gBeermatic jest gr± bazuj±c± na GTK+2, zawieraj±c± pytania o filmach,
-gierki i inne g³upie rzeczy.
+%description -l pl.UTF-8
+gBeermatic jest grÄ… bazujÄ…cÄ… na GTK+2, zawierajÄ…cÄ… pytania o filmach,
+gierki i inne gÅ‚upie rzeczy.
 
 %prep
 %setup -q
