@@ -1,5 +1,5 @@
 Summary:	Stupid games to help you get drunk in style
-Summary(pl.UTF-8):   Głupie gierki pomagające upić się w stylu
+Summary(pl.UTF-8):	Głupie gierki pomagające upić się w stylu
 Name:		gbeermatic
 Version:	0.1
 Release:	3
